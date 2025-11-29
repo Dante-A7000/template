@@ -8,12 +8,19 @@ ul{
 #header {
     position: relative;
     width: 100%;
+    display: flex;
+    justify-content: center;
 }
 #nav {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 100vw;
     position: absolute;
+    background-color: white;
+    z-index: 2;
+    height: 50px;
+    box-shadow: 0px 5px 5px -3px rgba(0, 0, 0, 0.5);
+
 }
 #logo-span{
     font-weight: bold;
@@ -28,7 +35,7 @@ header .ul {
     display: flex;
     justify-content: space-between;
     gap: 46px;
-    right: 5%;
+    right: 3%;
 }
 @media (max-width: 600px) {
     header .ul {
@@ -38,4 +45,29 @@ header .ul {
         top: 0;
         left: 5%;
     }
+}
+#landing-img {
+    width: 80%;
+    height: auto;
+    z-index: 1;
+   
+}
+@media (max-width: 1510px) {
+    #landing-img {
+        width: 110%;
+    }
+}
+
+
+
+#landing-text {
+    position: absolute;
+    font-size: larger;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    width: 20%;
+    justify-content: center;
 }
